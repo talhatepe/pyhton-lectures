@@ -25,14 +25,14 @@
 ### • hw2.py:
 ```python
 	while True:
-        num1 = input("Num 1: ")
-        num1 = int(num1) - 1
-        num2 = input("Num 2: ")
-        num2 = int(num2)
-        str = input("String: ")
-        str2 = str[num2:]
-        str = str[:num1]
-        print (str,str2)
+	    num1 = input("Num 1: ")
+	    num1 = int(num1) - 1
+	    num2 = input("Num 2: ")
+	    num2 = int(num2)
+	    str = input("String: ")
+	    str2 = str[num2:]
+	    str = str[:num1]
+	    print (str,str2)
 ```
 
 > 2 tane int değer isteyerek num1 ve num2 değişkenlerine atadım. 1 tane string değeri de str değişkenine atadım. Girilen 2 int değerin arası sileneceği için girilen ilk sayı kadar olan string girdiyi str adlı değişkene, girilen ikinci sayıden sonraki string değeri str2 adlı değişkene atadım ve ekrana bastım.
@@ -54,11 +54,11 @@
 ### • hw4.py:
 ```python
 	while True:
-        str = input(": ")
-        if str == str[::-1]:
-            print ("Polindrome")
+	    str = input(": ")
+	    if str == str[::-1]:
+    	    print ("Polindrome")
         else:
-            print ("Not Polindrome")
+    	    print ("Not Polindrome")
 ```
 
 > ...
