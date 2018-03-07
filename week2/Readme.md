@@ -1,6 +1,6 @@
 # Homework - Week 2
 
-### + hw1.py:
+### • hw1.py:
 ```python
 	import random 
 
@@ -22,7 +22,7 @@
 > Öncelikle 100 elemanlı bir array oluşturdum sonrasında bu arrayin içerisine 1-99 arasındaki sayıları ekledim. Arrayın içerisindeki indexlerin yerini karışık bir şekilde dağıttım. Bir tane dublicate sayı ekledim. Arrayi ekrana bastım. 'x' adında bir değişkene 4950 (1-99 arasındaki sayıların toplamı) değerini atadım. Arrayin index sayısı kadar for döndüm ve toplam değişkenine her döngüde arrayın elemanını ekleyerek toplamı buldum. 'toplam' değişkeninden 'x' değişkenini çıkartarak ekrana bastım.
 
 
-### + hw2.py:
+### • hw2.py:
 ```python
 	while True:
     	num1 = input("Num 1: ")
@@ -38,7 +38,7 @@
 > 2 tane int değer isteyerek num1 ve num2 değişkenlerine atadım. 1 tane string değeri de str değişkenine atadım. Girilen 2 int değerin arası sileneceği için girilen ilk sayı kadar olan string girdiyi str adlı değişkene, girilen ikinci sayıden sonraki string değeri str2 adlı değişkene atadım ve ekrana bastım.
 
 
-### + hw3.py:
+### • hw3.py:
 ```python
 	while True:
 	    str = input(": ")
@@ -51,7 +51,7 @@
 > Bir string değer aldım str değişkenine atadım. 'arr' adından bir list oluşturdum. 'arr' adlı arrayin içine girilen string değeri her harf bir indexe gelecek şekilde bir işlem yaptım. Sonrasında tekrar eden indexleri ayıkladım ve çıkan sonucu ekrana bastım.
 
 
-### + hw4.py:
+### • hw4.py:
 ```python
 	while True:
     	str = input(": ")
