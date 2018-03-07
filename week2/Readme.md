@@ -56,9 +56,9 @@
 	while True:
 	    str = input(": ")
 	    if str == str[::-1]:
-    	    print ("Polindrome")
+		    print ("Polindrome")
         else:
-    	    print ("Not Polindrome")
+		    print ("Not Polindrome")
 ```
 
 > ...
