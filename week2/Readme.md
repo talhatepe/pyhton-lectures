@@ -1,6 +1,6 @@
 # Homework - Week 2
 
-### * hw1.py:
+### ⋅⋅* hw1.py:
 ```python
 	import random 
 
