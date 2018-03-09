@@ -1,14 +1,18 @@
 import random
 
 arr = [None] * 100
+tmp = [None] * 99
+
 for i in range(1, 100):
     arr[i] = i
-    arr2 = i
-
+tmp += arr
 arr[0] = random.randint(1, 99)
+random.shuffle(arr)
 print(arr)
 
-random.shuffle(arr)
-
-randoms = [x for n, x in enumerate(arr) if x in arr[:n]]
-print ("Duplicate Num: ", randoms)
+for i in arr:
+    d = tmp[i-1]
+    if d == None:
+        tmp[i-1] = 1
+    else:
+        print("Duplicate Num: ", i)
