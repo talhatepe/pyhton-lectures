@@ -2,7 +2,7 @@
 
 ### • hw1.py:
 ```python
-While True:
+while True:
 	input = input(": ")
 	def rev(str):
     	arr = []
