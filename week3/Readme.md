@@ -21,7 +21,7 @@ while True:
     	    arr[0 - (i + 1)] = tmp
    	return arr
 
-	print (''.join(rev(input)))
+	print (''.join(reverse(input)))
 ```
 
 > Bir girdi alarak 'input' adlı değişkene atadım. 'rev' adında bir fonksiyon oluşturdum. 'arr' isimli bir list oluşturup içine klavyeden girilen girdiyi aktardım. 'leng' adında bir değişkenin oluşturup içine 'arr' adlı listin boyutunu int olarak atadım. Ardından 'ave' adlı değişkenime leng/2 diyerek uzunluğu ikiye böldüm. 'single' adında bir boolean değişkene 'True' değer tanımladım. 'leng' isimli uzunluk değişkenime tek/çift kontrolü yaptım. Çift ise 'single' değişkenimin değerini 'False' olarak değiştirdim. Sonrasında eğer tek ise 'ave' adlı değişkene içerisindeki sayıyı yuvarlayıp kendisine atadım. 'ave2' diye bir değişken daha oluşturup 'ave' değişkeni içerisindeki sayıyı tanımladım. Bir döngü oluşturup 0'dan başlayıp girilen string değeri reverse ettim harf harf sırayla ve çıktıyı ekrana bastım.
