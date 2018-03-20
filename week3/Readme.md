@@ -4,7 +4,7 @@
 ```python
 while True:
 	input = input(": ")
-	def rev(str):
+	def reverse(str):
     	arr = []
     	arr += str
     	leng = len(arr)
