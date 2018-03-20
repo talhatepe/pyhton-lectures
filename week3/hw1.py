@@ -1,6 +1,6 @@
 while True:
     input = input(": ")
-    def rev(str):
+    def reverse(str):
         arr = []
         arr += str
         leng = len(arr)
@@ -18,4 +18,4 @@ while True:
         return arr
 
 
-    print (''.join(rev(input)))
+    print (''.join(reverse(input)))
