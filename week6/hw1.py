@@ -1,3 +1,6 @@
+import random
+
+
 class Node:
     def __init__(self, data):
         self._data = data
@@ -28,7 +31,6 @@ class LinkedList:
         v = self._rootNode
         while v.nextNode != None:
             v = v.nextNode
-
         v.nextNode = tmp
 
     def dump(self):
@@ -50,39 +52,64 @@ class LinkedList:
         while v2 != None:
             if v2.data == data:
                 v1.nextNode = v2.nextNode
-                return
+            return
             v1 = v2
             v2 = v2.nextNode
 
-    def loop(self):
+    def create_cycle(self):
+        size = self.find_size()
+        rnd = random.randint(0, size)
+        m = self._find_lastnode()
+        t = self._find_node(rnd)
+        m.nextNode = t
+
+    def _find_node(self, rnd):
+        tmp = self._rootNode
+        for i in range(1, rnd):
+            tmp = tmp.nextNode
+        return tmp
+
+    def _find_lastnode(self):
         if self._rootNode == None:
             return
         n = self._rootNode
-        n2 = n
+        while n.nextNode != None:
+            n = n.nextNode
+        return n
+
+    def find_size(self):
+        if self._rootNode == None:
+            return
+        n = self._rootNode
+        size = 0
         while n != None:
-            print(n.data, " ", n2.data)
-            if n.data != self._rootNode.data:
-                if n.data == n2.data:
-                    print("Loop: ", n2.data)
-            if n.nextNode == None:
-                return
-            n = n.nextNode.nextNode
-            n2 = n2.nextNode
+            size += 1
+        n = n.nextNode
+        return size
+
+    def contains_cycle(self):
+        n = self._rootNode
+        n2 = n
+        while True:
+            n = n.nextNode
+        if n2 == None:
+            return False
+        if n2.nextNode == None or n2.nextNode.nextNode == None:
+            return False
+        n2 = n2.nextNode.nextNode
+        if n2 == n:
+            return True
+        return False
 
 
 if __name__ == "__main__":
     a = LinkedList()
-    a.add(1)
-    a.add(2)
-    a.add(3)
-    a.add(4)
     a.add(5)
-    a.add(2)
-    a.add(3)
-    a.add(4)
-    a.add(5)
-    a.add(2)
-    a.add(3)
-    a.add(4)
-    a.add(5)
-    a.loop()
+    a.add(10)
+    a.add(20)
+    a.add(29)
+    a.dump()
+    print("--" * 10)
+    a.delete(20)
+    a.create_cycle()
+    print(a.contains_cycle())
